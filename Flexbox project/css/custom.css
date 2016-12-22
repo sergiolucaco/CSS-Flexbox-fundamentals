@@ -7,10 +7,13 @@ ul#flex-container {
 	margin:0;
 	padding: 0;
 	display: flex;/*This property has to be in their parent element*/
+	flex-direction:row; /*By default is row. Parameters available : row, row-reverse, column , column-reverse*/
+	flex-wrap: wrap; /*By default is nowrap. Control to stay the same line or not based on the viewport*/
 }
 
 ul li {
 	flex-grow: 1; /*in child elements to expand all the width chosing its proporcionality responsive*/
+	width: 100px;
 	height: 150px;
 	padding-top: 45px;
 	color: #fff;
@@ -21,9 +24,9 @@ ul li {
 }
 
 
-ul li:first-child { background: #c2d775; order : 2 ;/*With property order */}
-ul li:nth-child(2) { background: #007278; order : 3 ;}
-ul li:nth-child(3) { background: #c7b600; flex-grow: 2; /*Allow us to change only one child with another proportion*/}
-ul li:nth-child(4) { background: #a90077; flex-grow: 5; }
-ul li:nth-child(5) { background: #00a378; order : 4 ; }
-ul li:last-child { background: #00ea72; order : 5 ; }
+ul li:first-child { background: #c2d775; }
+ul li:nth-child(2) { background: #007278; }
+ul li:nth-child(3) { background: #c7b600; }
+ul li:nth-child(4) { background: #a90077; }
+ul li:nth-child(5) { background: #00a378;  }
+ul li:last-child { background: #00ea72;  }
