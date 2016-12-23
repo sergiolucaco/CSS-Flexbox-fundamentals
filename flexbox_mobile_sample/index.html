@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+  <!-- header>(.child>img["images/logo.png"])>(ul.child>(li>a[#])*4)>(.child>(img["images/magnify.png"]#magnify+input#search)) -->
+  <header>
+    <div class="child">
+      <img src="images/logo.png" alt="">
+    </div>
+    <ul class="child">
+    <li><a href="#"></a>About</li>
+      <li><a href="#"></a>Services</li>
+      <li><a href="#"></a>Gallery</li>
+      <li><a href="#"></a>Contact</li>
+    </ul>
+    <div class="child">
+      <img src="images/magnify.png" alt="" id="magnify">
+      <input type="text" name="search" id="search">
+    </div>
+  </header>
+
+  <!-- .container>h1{Flexawesome}+p{lorem30} -->
+  <div class="container">
+    <h1>Flexawesome</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptates provident unde ut, corporis esse. Provident nulla, quos illum consequuntur molestias distinctio esse ipsum ut unde pariatur, aliquid inventore amet?</p>
+  </div>
+
+
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
